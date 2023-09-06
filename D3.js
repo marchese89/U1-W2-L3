@@ -179,9 +179,10 @@ console.log(eyeColor);
 */
 
 let crewMass = 0;
-
-for (let i = 0; i < starWarsCharacters.length; i++) {
+let i = 0;
+while (i < starWarsCharacters.length) {
   crewMass += starWarsCharacters[i].mass;
+  i++;
 }
 
 console.log("massa totale dell'equipaggio", crewMass);
