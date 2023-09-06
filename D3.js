@@ -263,7 +263,7 @@ console.log(characters);
 */
 
 let random = Math.random(); //numero a caso compreso tra 0 (compreso) e 1 (non compreso)
-random *= starWarsCharacters.length; //moltiplicato per il numero massimo desiderato
+random *= starWarsCharacters.length - 1; //moltiplicato per il numero massimo desiderato
 let indice = Math.floor(random); //arrotondamento per difetto
 console.log(Math.floor(indice));
 let valore = starWarsCharacters[indice]; //oggetto presente all'indice corrispondente
